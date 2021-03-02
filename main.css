@@ -18,35 +18,35 @@ a
 #logo_llink
 {
 	font-family: 'Akaya Kanadaka', cursive;
-	font-size: 2.7rem;
+	font-size: 2.4rem;
 	color: white;
 	text-shadow: 2px 2px 4px gray;
-	margin-left: 7.2vh;
+	margin-left: 4%;
 	/*margin-bottom: -3vh; 
 	*/rgin-top: -1vh;
 	position:relative;
-	position: fixed;
+	position: relative;
 }
 nav div ul
 {
 	font-size: 1.2rem;
-	margin-right: 6rem;
+	margin-right: 5rem;
 }
 
 .after_link_div
 {
-	ackground-image: linear-gradient(rgba(0,168,225,0.1), rgba(0,168,225,0.1)); 
+	ackground-image: linear-gradient(rgba(0,168,225,0.1), rgba(0,168,225,0.4)); 
 	margin-bottom: 2.5vh;
 	background-image: linear-gradient(rgba(0,168,225,0.1), rgba(0,168,225,0.1)) , url("lptop.jpeg");
 	width: 100%;
 	height: 100vh;
 	clip-path: polygon(100% 0%, 100% 87%, 60% 100%, 0 85% , 0 0); 
 	background-repeat: no-repeat;
-	background-size: 100%;
+	background-size: 100% 100%;
 }
 .nav-item a
 {
-	color:black!important;
+	color:#0C090A!important;
 }
 .nav-item a:hover
 {
@@ -56,13 +56,13 @@ nav div ul
 .after_link_div:before
 {
 	content: ""
-	position:absolute;
+	position:relative;
 	top: 2%;
 	bottom: 0%;
 	left: 0%;
 	right:5%;
 	opacity: .1;
-	z-index: -1;
+	z-inex: -1;
 	background:linear-gradient(to right, #1e5799 0%, #3ccdbb 0%, #16c7fe 100%);
 }
 
@@ -81,14 +81,15 @@ nav div ul
 	position: relative;
 	argin-left:  27vh;
 	font-family: 'Noto Serif', serif;
+	font-weight: bold;
 }
 
 .header-buttons a
 {
-border: 1px solid #fff;
+border: 1px solid gray;
 border-radius: 100px;
 margin:0 5px;
-padding:6px 25px;
+padding:6px 20px;
 outline: none;
 color:black;
 font-size: 1rem;
@@ -101,16 +102,16 @@ font-size: 1.3rem;
 
 #heading
 {
-	font-size: 2rem;
-	color:black;
+	font-size: 1.8rem;
+	color:#2C3539;
 }
 .center-div
 {
 	width: 100%;
 	height: 100%;
-	position: relative;
-	top: 75%;
-	left:50%;
+	position: absolute;
+	top: 85%;
+	left:52%;
 	transform: translate(-50%, -50%);
 	-ms-transform: translate(-50%, -50%);
 	-webkit-transform: translate(-50%, -50%);
@@ -131,7 +132,7 @@ font-size: 1.3rem;
 .contactus{
 	width: 100%;
 	height: 100vh;
-	padding: 80px 0;
+	padding: 90px 0;
 	position: relative;
 }
 
@@ -149,12 +150,12 @@ font-size: 1.3rem;
 
 #form-button button
 {
-	border:1px solid #50d1c0;
+	border:1px solid gray;
 	border-radius: 100px;
 	margin: 0 4px;
 	padding: 1rem 2rem;
 	outline: none;
-	color:#50d1c0;
+	color:black;
 	font-size: 1rem;
 	font-weight: 400;
 	line-height: 1.3;
@@ -241,16 +242,91 @@ font-family: 'Akaya Kanadaka', cursive;
 {
 	isplay: none;
 	position: fixed;
-	bottom:15px;
-	right: 30px;
+	bottom:24px;
+	right: 45px;
 	z-index: 99;
 	border:none;
-	color:#666362;
-	background: #6960EC;
+	color:blue;
+	background: #2C3539;
 	padding:10px;
 	border-radius: 10px;
 	
 }
 #mybtn:hover{
 	background:#57FEFF;
+}
+
+/*media quaries*/
+@media(max-width: 768px)
+{
+	.nav-item
+	{
+		text-align: center!important;
+		color:blue;
+	}
+	.nav-item a
+{
+	color:#34282C!important;
+}
+	logo_llink
+	{
+		margin-left: 50%;
+	}
+	.contactus
+	{
+		height: auto;
+		margin-top:50px;
+	}
+
+	.footer-div:nth-child(2)
+	{
+		text-align: left;
+	}
+
+	.footer-div
+	{
+		margin:24px 0;
+	}
+}
+
+@media(max-width: 485px)
+{
+
+	.navbar-toggler{
+width: 57px;
+height: 49px;
+background-color: gray;
+
+}
+	.nav-item
+	{
+		text-align: center!important;
+		color:blue;
+	}
+	.nav-item a
+{
+	color:#34282C!important;
+	font-weight: bold;
+	font-size: 1.7rem;
+}
+	logo_llink
+	{
+		margin-left: 50%;
+	}
+	.contactus
+	{
+		height: auto;
+		margin-top:30px;
+	}
+
+	.footer-div:nth-child(2)
+	{
+		text-align: left;
+	}
+
+	.footer-div
+	{
+		margin:24px 0;
+	}	
+
 }
