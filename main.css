@@ -403,7 +403,15 @@ font-family: 'Akaya Kanadaka', cursive;
 }
 
 /*media quaries*/
-@media(max-width: 768px)
+
+@media(min-width: 769px)
+{
+	#cs_library
+	{
+		height: 163px!important;
+	}
+}
+@media(max-width:768px)
 {
 	.nav-item
 	{
@@ -418,15 +426,49 @@ font-family: 'Akaya Kanadaka', cursive;
 	{
 		margin-left: 50%;
 	}
-	.contactus
+	#mywork
+	{
+		height: auto;
+		margin-top: 50px;
+	}
+	.contactus:before
+{
+	content: "";
+	position: absolute;
+	top: 0;
+	left: 0;
+	bottom: 0;
+	right: 0;
+	background:linear-gradient( 332deg,#737CA1 65%, #fff 10%);
+	z-index: -1;
+}
+	#contactus
 	{
 		height: auto;
 		margin-top:50px;
 	}
 
+	#about
+	{
+		height: auto;
+		margin-top:30px;
+	}
+	.card-second
+	{
+		transform: translateY(0px);
+		margin: 90px 0;
+	}
+
+	.newsletter
+	{
+		width: 100%;
+		height: auto;
+		margin-top: 190px; 
+	}
+
 	.footer-div:nth-child(2)
 	{
-		text-align: left;
+		text-align: center;
 	}
 
 	.footer-div
@@ -435,7 +477,99 @@ font-family: 'Akaya Kanadaka', cursive;
 	}
 }
 
-@media(max-width: 485px)
+/*@media screen and (max-width: 300px) /* Mobile */
+ {
+  
+	.newsletters
+	{
+		width: 100%;
+		height: auto;
+		margin-top: 250px;
+	}
+}
+*/
+/*@media (max-width:321px)
+{
+	.navbar-toggler{
+width: 57px;
+height: 49px;
+background-color: gray;
+
+}
+	.nav-item
+	{
+		text-align: center!important;
+		color:blue;
+	}
+	.nav-item a
+{
+	color:#34282C!important;
+}
+	logo_llink
+	{
+		margin-left: 50%;
+	}
+
+	#contactus
+	{
+		height: auto;
+		margin-top:150px;
+	}
+	#about
+	{
+		height: auto;
+		margin-top:50px;
+	}
+
+	#mywork
+	{
+		height: auto!important;
+		margin-top:50px;
+	}
+	.newsletters
+	{
+		width: 100%;
+		height: auto;
+		margin-top: 250px;
+	}
+
+	.footer-div:nth-child(2)
+	{
+		text-align: center;
+	}
+
+	.footer-div
+	{
+		margin:24px 0;
+	}
+}*/
+/*
+@media only screen and (max-width: 600px) {
+  .newsletters
+	{
+		width: 100%;
+		height: auto;
+		margin-top: 250px;
+
+	}
+
+	.footer-div:nth-child(2)
+	{
+		text-align: center;
+		padding-right: 29%;
+	}
+	.naviagtion_div
+	{
+		text-align: center;
+		margin-left: 50%;
+	}
+	#navigation_h
+	{
+		text-align: center;
+		mrgin-left: -10px!!important;
+	}
+}*/
+/*@media(max-width: 485px)
 {
 
 	.navbar-toggler{
@@ -469,7 +603,17 @@ background-color: gray;
 		height: auto;
 		margin-top:50px;
 	}
-
+	#mywork
+	{
+		height: auto!important;
+		margin-top:50px;
+	}
+.newsletters
+	{
+		width: 100%;
+		height: auto;
+		margin-top: 250px;
+	}
 	.footer-div:nth-child(2)
 	{
 		text-align: left;
@@ -485,4 +629,4 @@ background-color: gray;
 		margin-top: : 30px;
 	}*/
 
-}
+}*/
