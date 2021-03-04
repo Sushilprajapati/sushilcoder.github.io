@@ -1,4 +1,4 @@
-<?php
+<!-- <?php
 // the message
 // $msg = "First line of text\nSecond line of text";
 $name = $POST['name'];
@@ -20,4 +20,24 @@ mail("susheelprajapati07001@gmail.com","My subject","User Information", $message
 echo "<script type= 'text/javascript'> alert('Message sent successfully '); 
 window.history.log(-1); </script>";
 }
+?>
+ -->
+
+<?php
+// if(isset($_POST['esubmit']))
+// {
+	$to = "susheelprajapati07001@gmail.com";
+	$subject = $_POST['name'];
+	$message = $_POST['message'];
+	$from = $_POST['email']
+	$headers = "From: $from";
+
+	mail($to, $subject,$message,$headers);
+	echo "Mail sent. ";
+// }
+// else
+// {
+	// echo "mail not sent ";
+// }
+
 ?>
