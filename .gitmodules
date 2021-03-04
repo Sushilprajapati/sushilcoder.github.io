@@ -1,0 +1,9 @@
+[submodule "Cs_Typing"]
+	path = Cs_Typing
+	url = https://github.com/Sushilprajapati/SushilInvertis.github.io.git
+[submodule "Typing_skill"]
+	path = Typing_skill
+	url = https://github.com/Sushilprajapati/SushilInvertis.github.io.git
+[submodule "speedboster"]
+	path = speedboster
+	url = https://github.com/Sushilprajapati/SushilInvertis.github.io.git
