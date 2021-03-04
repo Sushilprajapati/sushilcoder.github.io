@@ -201,7 +201,7 @@
 		<div class="row">
 			<div class="col-lg-8 col-md-8 col-10 offset-lg-2 offset-md-2 offset-1">
 
-				<form method="POST" action="<?php echo $_SERVER['PHP_SELF']; ?>">
+				<form method="GET" action="<?php echo $_SERVER['PHP_SELF']; ?>">
   <div class="form-group">
     <input type="text"  class="form-control" id="uname" placeholder="Enter Your Name" name="name" required autocomplete="false" >
   </div>
@@ -226,12 +226,12 @@
 
 
 <?php
-if(isset($_POST['esubmit']))
+if(isset($GET['esubmit']))
 {
 	$to = "susheelprajapati07001@gmail.com";
-	$subject = $_POST['name'];
-	$message = $_POST['message'];
-	$from = $_POST['email']
+	$subject = $GET['name'];
+	$message = $GET['message'];
+	$from = $GET['email']
 	$headers = "From: $from";
 
 	mail($to, $subject,$message,$headers);
