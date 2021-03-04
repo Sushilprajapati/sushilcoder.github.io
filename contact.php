@@ -1,9 +1,9 @@
 <?php
 // the message
 // $msg = "First line of text\nSecond line of text";
-$name = $_REQUEST['name'];
-$email = $_REQUEST['email'];
-$message = $_REQUEST['message'];
+$name = $POST['name'];
+$email = $_POST['email'];
+$message = $_POST['message'];
 
 // use wordwrap() if lines are longer than 70 characters
 // $msg = wordwrap($msg,70);
