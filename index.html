@@ -53,8 +53,8 @@
 <h1  id = "heading" class="font-weight-bold">I am Sushil  </h1> 
 <p> Web Application Developer </p>
 <div class="header-buttons"> 
-<a href="#"> About </a>
-<a href="#">Contact </a>
+<a href="about"> About </a>
+<a href="contact">Contact </a>
 </div>
 </div>
 </section>
@@ -201,7 +201,7 @@
 		<div class="row">
 			<div class="col-lg-8 col-md-8 col-10 offset-lg-2 offset-md-2 offset-1">
 
-				<form method="GET" action="<?php echo $_SERVER['PHP_SELF']; ?>">
+				<form method="REQUEST" action="<?php echo $_SERVER['PHP_SELF']; ?>">
   <div class="form-group">
     <input type="text"  class="form-control" id="uname" placeholder="Enter Your Name" name="name" required autocomplete="false" >
   </div>
@@ -226,12 +226,12 @@
 
 
 <?php
-if(isset($GET['esubmit']))
+if(isset($REQUEST['esubmit']))
 {
 	$to = "susheelprajapati07001@gmail.com";
-	$subject = $GET['name'];
-	$message = $GET['message'];
-	$from = $GET['email']
+	$subject = $REQUEST['name'];
+	$message = $REQUEST['message'];
+	$from = $REQUEST['email']
 	$headers = "From: $from";
 
 	mail($to, $subject,$message,$headers);
