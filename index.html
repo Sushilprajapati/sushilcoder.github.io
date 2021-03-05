@@ -203,7 +203,7 @@
 				<form action="https://formcarry.com/s/r-lQO9_C5I" method="POST" accept-charset="UTF-8" > 
 				<!-- <form method="REQUEST" action="<?php echo $_SERVER['PHP_SELF']; ?>"> -->
   <div class="form-group">
-    <input type="text"  class="form-control" id="uname" placeholder="Enter Your Name" name="name" required autocomplete="false" >
+    <input type="text"  class="form-control" id="uname" placeholder="Enter Your Name" name="name" minlength="3" required autocomplete="false" >
   </div>
 
   <div class="form-group">
@@ -215,7 +215,7 @@
     <input type="text"  class="form-control" id="umobile" placeholder="Enter Mobile Number" name="uemail" required autocomplete="false" >
   </div> -->
   <div class="form-group">
-  	<textarea class="form-control" rows="4" id="textarea"  name ="message" placeholder="Message"></textarea>
+  	<textarea class="form-control" rows="4" id="textarea"  name ="message" placeholder="Message" minlength="6"  required autocomplete="false"></textarea>
   </div>
   <div class="d-flex justify-content-center"id= "form-button">
   <button type="submit"  name= "esubmit" class="btn btn-primary">Submit</button>
@@ -224,7 +224,7 @@
 
 </section>
 
-
+<!-- 
 <?php
 if(isset($REQUEST['esubmit']))
 {
@@ -242,7 +242,7 @@ else
 	echo "mail not sent ";
 }
 
-?> 
+?>  -->
 
 <div class="icon">
 	
