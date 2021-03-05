@@ -464,14 +464,15 @@ font-family: 'Akaya Kanadaka', cursive;
 {
 	isplay: none;
 	position: fixed;
-	bottom:24px;
-	right: 45px;
+	bottom:2%;
+	right: 2%;
 	z-index: 99;
 	border:none;
 	color:blue;
-	background: #2C3539;
-	padding:10px;
+	background: #242583;
+	padding:1px;
 	border-radius: 10px;
+	font-size: 1.5rem;
 	
 }
 #mybtn:hover{
