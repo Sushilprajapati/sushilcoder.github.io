@@ -1,0 +1,66 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>career</title>
+    <style>
+
+                
+.result_option_btn {
+    background-image: linear-gradient(to right, #1A2980 0%, #26D0CE  51%, #1A2980  100%);
+    /* margin: 10px;
+    padding: 15px 45px; */
+    text-align: center;
+    text-transform: uppercase;
+    transition: 0.5s;
+    background-size: 200% auto;
+    color: rgb(241, 244, 247);            
+    box-shadow: 0 0 20px #eee;
+    border-radius: 5%;
+    font-size: 3vh;
+    text-shadow:3px 3px #00070c;
+    height:6vh;
+   font-weight: bold;
+    /* display: block; */
+  }
+
+  .result_option_btn:hover {
+    background-position: right center; /* change the direction of the change here */
+    color: #fff;
+    text-decoration: none;
+  }
+ 
+          .button_div
+        {
+            padding: 0;
+            text-align: center;
+            margin-top: 88%;
+            /* border: 2px solid rgb(36, 163, 172); */
+        } 
+        
+    </style>
+
+    <script>
+        function LineChart(){
+            window.open("career_prefrance_progress.html","_self");
+        }
+        function PieChart(){
+            window.open("pie.html","_self");
+        }
+
+
+    </script>
+</head>
+<body>
+    <div class="button_div" id="option_div">
+    <button id = "linechart" class="result_option_btn" onclick="LineChart()">Line Chart</button>
+    <!-- <button id ="piechart" class="result_option_btn" onclick="PieChart()"> Pie chart</button> -->
+    </div>
+</body>
+</html>
+
+
+
+ 
