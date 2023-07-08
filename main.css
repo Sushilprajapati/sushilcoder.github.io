@@ -178,6 +178,8 @@ font-size: 1.3rem;
 	padding: 100px 0!important;
 	
 	position: relative;
+	text-align: justify;
+        text-justify: inter-word;
 }
 
 .about_section
